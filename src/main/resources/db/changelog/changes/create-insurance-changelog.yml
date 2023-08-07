@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-insurance-table
+      author: tanvir
+      changes:
+        - createTable:
+            tableName: insurance
+            columns:
+              - column:
+                  name: ID
+                  type: varchar(36)
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: INSURANCE_NAME
+                  type: varchar(36)
+              - column:
+                  name: INSURANCE_COVERAGE
+                  type: varchar(255)
+              - column:
+                  name: INSURANCE_VEHICLE_TYPE
+                  type: varchar(40)
+              - column:
+                  name: PRICE
+                  type: varchar(20)
+
+

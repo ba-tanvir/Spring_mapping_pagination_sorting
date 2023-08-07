@@ -1,0 +1,38 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-car-table
+      author: tanvir
+      changes:
+        - createTable:
+            tableName: car
+            columns:
+              - column:
+                  name: ID
+                  type: varchar(36)
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: CAR_NAME
+                  type: varchar(55)
+              - column:
+                  name: BRAND_NAME
+                  type: varchar(36)
+              - column:
+                  name: MODEL
+                  type: varchar(20)
+              - column:
+                  name: ENGINE
+                  type: varchar(36)
+              - column:
+                  name: ENGINE_SIZE
+                  type: varchar(20)
+              - column:
+                  name: CAR_TYPE
+                  type: varchar(36)
+              - column:
+                  name: PRICE
+                  type: varchar(36)
+              - column:
+                  name: INSURANCE_ID
+                  type: varchar(36)

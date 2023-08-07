@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-user-table
+      author: tanvir
+      changes:
+        - createTable:
+            tableName: user_info
+            columns:
+              - column:
+                  name: NAME
+                  type: varchar(36)
+              - column:
+                  name: EMAIL
+                  type: varchar(36)
+              - column:
+                  name: AGE
+                  type: varchar(15)
+              - column:
+                  name: DRIVING_EXPERIENCE
+                  type: varchar(20)
+              - column:
+                  name: ACCIDENT_TYPE
+                  type: varchar(20)
+
+

@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: user-table-change
+      author: tanvir
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: CAR_ID
+                  type: varchar(36)
+            tableName: user_info

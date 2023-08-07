@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - include:
+      file: create-car-changelog.yml
+      relativeToChangelogFile: true
+  - include:
+      file: create-insurance-changelog.yml
+      relativeToChangelogFile: true
+  - include:
+      file: create-user-changelog.yml
+      relativeToChangelogFile: true
+  - include:
+      file: user-table-change.yml
+      relativeToChangelogFile: true
+  - include:
+      file: user-table-change2.yml
+      relativeToChangelogFile: true
+#  - include:
+#      file: create-team-changelog.yml
+#      relativeToChangelogFile: true
+#  - include:
+#      file: create-player-changelog.yml
+#      relativeToChangelogFile: true

@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: user-table-change2
+      author: tanvir
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: ID
+                  type: varchar(36)
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+            tableName: user_info
